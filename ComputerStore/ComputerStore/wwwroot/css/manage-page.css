@@ -1,0 +1,249 @@
+﻿.main-container
+{
+    width: 100%;
+    display: flex;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.menu {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 15px 0 0 15px;
+    padding: 20px;
+}
+
+.content-container {
+    width: 100%;
+    display: flex;
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 0 15px 15px 0;
+}
+
+.personalData {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 40px;
+    padding: 20px;
+}
+
+.accountController {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+ h1 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+        font-weight:200;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+.p-name-first {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    padding-top: 0px;
+}
+
+.p-name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.p-value {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #f0f2f2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #A2C617;
+}
+
+    .btn:hover {
+        background-color: #eee;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.form-group input {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border: none;
+    height: 30px;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    outline: none;
+    padding-left: 40px;
+    font-size: 16px;
+    background-size: 20px;
+    box-sizing: border-box;
+}
+
+    .form-group h1
+    {
+        margin-bottom: 0px;
+    }
+
+    .pass-inp {
+        background-image: url("/images/lock.png");
+    }
+
+#submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    width: 40%;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+    #submit-btn:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.order_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+    .order_container .order_item {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: orange;
+    }
+
+        .order_container .order_item:hover
+        {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .order_container .order_item h3 {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .order_container .order_item span {
+            color: brown;
+        }
+
+.orderProducts_container {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderProducts_container .prodcut_item 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: steelblue;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+    .orderProducts_container .prodcut_item h3 {
+        color: white;
+        margin: 10px;
+        padding: 0px;
+    }
+
+    .basket_container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .basket_container .basket_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .basket_container .basket_item h3 {
+        color: white;
+        margin-left: 15px;
+    }
+
+    .basket_container .basket_item span{
+        color: darkturquoise;
+    }
+
+    .basket_container input[type="submit"] {
+        color: white;
+        font-size: 18px;
+        background-color: forestgreen;
+        border-radius: 10px;
+        border: none;
+        margin: 20px;
+        height: 30px;
+    }
+
+        .basket_container input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: green;     
+        }
+
+        .basket_container .basket_item input[type="number"] {
+            margin-left: 5px;
+            height: 20px;
+            width: 40px;
+            border-radius: 5px;
+        }
+
+        .basket_container .basket_item button {
+            margin-left: 5px;
+            height: 20px;
+            width: 20px;
+            background-color: red;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .basket_container .basket_item button:hover {
+            cursor: pointer;
+            background-color: orangered;
+        }

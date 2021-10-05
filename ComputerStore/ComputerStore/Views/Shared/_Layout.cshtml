@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ComputerStore</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar">
+
+        <div id="navbar_logo">
+            <a href="~/Product/Index">
+                <img src="~/images/navbar_logo.png" alt="Alternate Text" />
+            </a>
+        </div>
+
+
+
+        <div class="navbar_a">
+            <a asp-area="" asp-controller="Info" asp-action="Delivery">Delivery</a>
+
+            <a asp-area="" asp-controller="Info" asp-action="Payment">Payment</a>
+
+            <a asp-area="" asp-controller="Info" asp-action="Guarantee">Guarantee</a>
+
+            <a asp-area="" asp-controller="Info" asp-action="Contacts">Contacts</a>
+
+
+        </div>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div id="navbar_buttons">
+                <!-- user money-->
+                <div id="userMoney">
+
+                </div>
+
+                <!-- account dropbox -->
+                <div class="dropdown">
+                    <a href="#">
+                        <img class="drop_btn_menu" src="~/images/user-icon.png" alt="Alternate Text" />
+                    </a>
+                    <div class="dropdown_menu">
+                        <a href="/Account/Manage">Personal data</a>
+                        <a href="#">My orders</a>
+                        <a id="logout-href" href="/Account/Logout">Logout</a>
+                    </div>
+                </div>
+
+                <!-- cart btn -->
+                <div id="basket-div">
+                    <a href="#">
+                        <img src="~/images/shopping-cart-icon.png" alt="Alternate Text" />
+                    </a>
+                </div>
+
+            </div>
+        }
+        else
+        {
+            <div id="navbar_buttons">
+                <a id="logIn_btn" href="~/Account/LogIn">Log In</a>
+                <form action="~/Account/Register" method="get">
+                    <input type="submit" value="Register" />
+                </form>
+            </div>
+        }
+    </div>
+
+    <div class="main">
+        @RenderBody()
+    </div>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <script>
+        function GetMoney() {
+        $.ajax({
+            type: "POST",
+            url: "/Account/GetUserMoney",
+            data: { userName: "@User.Identity.Name" },
+            success: function (data) {
+                $('#userMoney').html(data);
+            }
+        });
+        }
+
+    window.onload = GetMoney();
+    
+        </script>
+    }
+
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("ProductAjax", false)
+    @await RenderSectionAsync("ManageAjax", false)
+
+    @if ((string)TempData["Success"] != null)
+    {
+        @await Html.PartialAsync("/Views/Alert/SuccessAlert.cshtml", (string)TempData["Success"])
+    }
+</body>
+</html>

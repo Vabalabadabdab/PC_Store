@@ -1,0 +1,224 @@
+﻿<div class="filter-card">
+    <form asp-action="GetSelectProducts" method="post">
+        <input type="hidden" name="category" value="GPU" />
+
+        <div id="slider"></div>
+        <div id="slider_values_container">
+            <input id="min-bar-val" class="bar-val" type="number" name="minPrice" />
+            <p>-</p>
+            <input id="max-bar-val" class="bar-val" type="number" name="maxPrice" />
+        </div>
+
+        <button type="button" class="accordion">Manufacturer</button>
+        <div class="panel">
+            <label class="container-filter">
+                Amd
+                <input type="checkbox" name="values" value="Manufacturer Amd">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Nvidia
+                <input type="checkbox" name="values" value="Manufacturer Nvidia">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Memory</button>
+        <div class="panel">
+            <label class="container-filter">
+                24 Gb
+                <input type="checkbox" name="values" value="Memory 24">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                16 Gb
+                <input type="checkbox" name="values" value="Memory 16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                12 Gb
+                <input type="checkbox" name="values" value="Memory 12">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                11 Gb
+                <input type="checkbox" name="values" value="Memory 11">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                10 Gb
+                <input type="checkbox" name="values" value="Memory 10">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                8 Gb
+                <input type="checkbox" name="values" value="Memory 8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                6 Gb
+                <input type="checkbox" name="values" value="Memory 6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                4 Gb
+                <input type="checkbox" name="values" value="Memory 4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                3 Gb
+                <input type="checkbox" name="values" value="Memory 3">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2 Gb
+                <input type="checkbox" name="values" value="Memory 2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                1 Gb
+                <input type="checkbox" name="values" value="Memory 1">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Bitness</button>
+        <div class="panel">
+            <label class="container-filter">
+                4096 bit
+                <input type="checkbox" name="values" value="Bitness 4096">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                512 bit
+                <input type="checkbox" name="values" value="Bitness 512">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                384 bit
+                <input type="checkbox" name="values" value="Bitness 384">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                352 bit
+                <input type="checkbox" name="values" value="Bitness 352">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                320 bit
+                <input type="checkbox" name="values" value="Bitness 320">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                256 bit
+                <input type="checkbox" name="values" value="Bitness 256">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                192 bit
+                <input type="checkbox" name="values" value="Bitness 192">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                128 bit
+                <input type="checkbox" name="values" value="Bitness 128">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                64 bit
+                <input type="checkbox" name="values" value="Bitness 64">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Memory type</button>
+        <div class="panel">
+            <label class="container-filter">
+                GDDR6X
+                <input type="checkbox" name="values" value="MemoryType GDDR6X">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                GDDR6
+                <input type="checkbox" name="values" value="MemoryType GDDR6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                GDDR5X
+                <input type="checkbox" name="values" value="MemoryType GDDR5X">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                GDDR5
+                <input type="checkbox" name="values" value="MemoryType GDDR5">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                GDDR4
+                <input type="checkbox" name="values" value="MemoryType GDDR4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                GDDR3
+                <input type="checkbox" name="values" value="MemoryType GDDR3">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                HBM
+                <input type="checkbox" name="values" value="MemoryType HBM">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                HBM2
+                <input type="checkbox" name="values" value="MemoryType HBM2">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Backlight</button>
+        <div class="panel">
+            <label class="container-filter">
+                RGB-backlight
+                <input type="checkbox" name="values" value="Backlight RGB">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                ARGB-backlight
+                <input type="checkbox" name="values" value="Backlight ARGB">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                No backlight
+                <input type="checkbox" name="values" value="Backlight No">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Count fans</button>
+        <div class="panel">
+            <label class="container-filter">
+                3 fans
+                <input type="checkbox" name="values" value="Fan 3">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2 fans
+                <input type="checkbox" name="values" value="Fan 2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                1 fans
+                <input type="checkbox" name="values" value="Fan 1">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                No fans
+                <input type="checkbox" name="values" value="Fan No">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="submit" class="accordion-btn">Apply</button>
+    </form>
+
+</div>

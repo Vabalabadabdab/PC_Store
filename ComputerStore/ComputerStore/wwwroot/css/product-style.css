@@ -1,0 +1,644 @@
+.main-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15% 0 15%;
+}
+.main-container hr {
+  width: 100%;
+}
+.main-container .link {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 16px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  text-decoration: underline;
+}
+.main-container .link:hover {
+  color: #FE33BA;
+}
+.main-container .product-name-container h1 {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  text-shadow: black 0px 0 10px;
+}
+.main-container .link-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .product-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+.main-container .product-container .image-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+}
+.main-container .product-container .image-container img {
+  width: 100%;
+  height: auto;
+}
+.main-container .product-container .action-container {
+  width: 45%;
+}
+.main-container .product-container .action-container .discount-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  margin-bottom: 30px;
+}
+.main-container .product-container .action-container .discount-container hr {
+  border: none;
+  border-left: 5px solid #FE33BA;
+  height: 80px;
+  width: 10px;
+  margin: 0px;
+}
+.main-container .product-container .action-container .discount-container .discount-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .product-container .action-container .discount-container .discount-data h2 {
+  margin: 6px;
+  color: #FE33BA;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.main-container .product-container .action-container .discount-container .discount-data span {
+  margin-left: 3px;
+  border: 1px solid gray;
+  font-size: 26px;
+  color: #A69999;
+}
+.main-container .product-container .action-container .price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+}
+.main-container .product-container .action-container .price-container .left-container {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 5px;
+}
+.main-container .product-container .action-container .price-container .left-container p {
+  margin: 0px;
+  color: #304E92;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main-container .product-container .action-container .price-container .left-container h1 {
+  margin: 0px;
+}
+.main-container .product-container .action-container .price-container .left-container span {
+  font-size: 16px;
+  font-weight: 200;
+}
+.main-container .product-container .action-container .price-container .left-container h3 {
+  text-decoration: line-through;
+  margin: 0px;
+  color: #A69999;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.main-container .product-container .action-container .price-container .right-container {
+  width: 49%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .product-container .action-container .price-container .right-container p {
+  color: orange;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  padding: 5px;
+  font-weight: bold;
+}
+.main-container .product-container .action-container .price-container .right-container button {
+  background-color: #A2C617;
+  height: 60px;
+  border: 0px;
+}
+.main-container .product-container .action-container .price-container .right-container button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.main-container .product-container .action-container .price-container .right-container button p {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 200;
+}
+.main-container .specifications-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-top: 60px;
+}
+.main-container .specifications-container .title-container {
+  width: 100%;
+}
+.main-container .specifications-container .key-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+.main-container .specifications-container .value-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+.main-container .specifications-container hr {
+  margin: 0px;
+  padding: 0px;
+  color: #A69999;
+}
+.main-container .specifications-container h1 {
+  color: #A69999;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+.main-container .specifications-container h2 {
+  margin: 6px;
+  color: #A69999;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 100;
+}
+.main-container .specifications-container span {
+  color: black;
+}
+.main-container .title-reviews {
+  margin-top: 60px;
+}
+.main-container .title-reviews h1 {
+  color: #A69999;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: black;
+}
+.main-container .reviews-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .reviews-container .title-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-container .reviews-container .title-review h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: black;
+}
+.main-container .reviews-container .title-review span {
+  color: #A69999;
+  margin-left: 20%;
+}
+.main-container .reviews-container .raiting-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .reviews-container .raiting-container .points-container {
+  border-radius: 50%;
+  border: 3px solid #A2C617;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-container .reviews-container .raiting-container .points-container h1 {
+  color: #A69999;
+  text-align: center;
+  padding: 0;
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.main-container .reviews-container .raiting-container .property-points-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  margin-left: 20px;
+}
+.main-container .reviews-container .raiting-container .property-points-container h2 {
+  color: #A69999;
+  text-align: center;
+  padding: 0;
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+.main-container .reviews-container .raiting-container .property-points-container span {
+  color: #A69999;
+}
+.main-container .reviews-container .raiting-container hr {
+  border: none;
+  border-left: 1px solid #A69999;
+  height: 40px;
+  width: 2px;
+  margin: 0px;
+  margin-left: 20px;
+  padding: 0px;
+}
+.main-container .reviews-container .raiting-container img {
+  margin-left: 20px;
+  height: 24px;
+  width: 24px;
+}
+.main-container .reviews-container .review-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 50%;
+}
+.main-container .reviews-container .review-container pre {
+  color: #A69999;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 5px 0px 15px 0px;
+}
+.main-container .reviews-container .review-container .pros-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.main-container .reviews-container .review-container .pros-container h1 {
+  color: #A2C617;
+  padding: 0;
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.main-container .reviews-container .review-container .cons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .reviews-container .review-container .cons-container h1 {
+  color: #BB6666;
+  padding: 0;
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.main-container .reviews-container .review-container .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .reviews-container .review-container .text-container h1 {
+  color: black;
+  padding: 0;
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.main-container .reviews-container .review-container .footer-hr {
+  width: 100%;
+}
+.main-container .form-review-container {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .form-review-container input[type=submit] {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #0075FF;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  width: 15%;
+  height: 40px;
+  border: none;
+  min-width: 100px;
+}
+.main-container .form-review-container input[type=submit]:hover {
+  cursor: pointer;
+}
+.main-container .form-review-container .title-form-review-container h1 {
+  color: #A69999;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: black;
+}
+.main-container .form-review-container .raiting-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.main-container .form-review-container .raiting-form-container .title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+}
+.main-container .form-review-container .raiting-form-container .title-container h3 {
+  color: #A69999;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: black;
+  margin: 0px;
+  font-size: 16px;
+}
+.main-container .form-review-container .raiting-form-container .slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100px;
+  margin-left: 60px;
+}
+.main-container .form-review-container .raiting-form-container .slider-container .slider-element-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.main-container .form-review-container .review-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.main-container .form-review-container .review-form-container input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main-container .form-review-container .review-form-container .pros-cons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+}
+.main-container .form-review-container .review-form-container .pros-cons-container .input-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 45%;
+}
+.main-container .form-review-container .review-form-container .pros-cons-container .input-text-container label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+.main-container .form-review-container .review-form-container .pros-cons-container .input-text-container .cons {
+  margin-left: 40px;
+}
+.main-container .form-review-container .review-form-container .review-input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+}
+.main-container .form-review-container .review-form-container .review-input-container label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+.main-container .form-review-container .review-form-container .review-input-container input[type=text] {
+  height: 100px;
+  padding-bottom: 70px;
+}
+.main-container .form-review-container .radio-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-container .form-review-container .radio-buttons-container h4 {
+  color: #A69999;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+}
+.main-container .form-review-container .radio-buttons-container .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8%;
+}
+.main-container .form-review-container .radio-buttons-container .radio-container .radio-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-container .form-review-container .radio-buttons-container .radio-container input[type=radio] {
+  margin-top: 5px;
+}

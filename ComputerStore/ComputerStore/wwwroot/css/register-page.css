@@ -1,0 +1,99 @@
+﻿.content-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-group input {
+    margin-top: 20px;
+    border-radius: 30px;
+    border: none;
+    height: 56px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 30px;
+    outline: none;
+    padding-left: 60px;
+    font-size: 16px;
+    background-size: 20px;
+    box-sizing: border-box;
+}
+
+.form-group {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.pass-inp {
+    background-image: url("/images/lock.png");
+}
+
+#log-inp {
+    background-image: url("/images/user.png");
+}
+
+#mail-inp {
+    background-image: url("/images/mail.png");
+}
+
+#personal-data-imp
+{
+    background-image: url("/images/name.png");
+}
+
+#phone-imp {
+    background-image: url("/images/phone-numbers-call.png");
+}
+
+.content-div input:focus {
+    border: 1px solid gray;
+}
+
+.content-div from {
+    width: 100%;
+}
+
+#form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+    #submit-btn:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+.error-message {
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin-top: 5px;
+    text-align: center;
+}

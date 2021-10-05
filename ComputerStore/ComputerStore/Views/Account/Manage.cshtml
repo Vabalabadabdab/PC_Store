@@ -1,0 +1,117 @@
+﻿<link href="~/css/manage-page.css" rel="stylesheet" />
+
+<div class="main-container">
+    <div class="menu">
+        <button id="basket-btn" class="btn">Busket</button>
+        <button id="order-btn" class="btn">Orders</button>
+        <button id="personalData-btn" class="btn">Personal data</button>
+        <button id="changePassword-btn" class="btn">Change password</button>
+        <button id="upBalance-btn" class="btn">Top up balance</button>
+    </div>
+
+    <div class="content-container">
+
+    </div>
+</div>
+
+@if (TempData["Error"] != null)
+{
+    @await Html.PartialAsync("/Views/Alert/ErrorAlert.cshtml", (string)TempData["Error"])
+}
+@if (TempData["Success"] != null)
+{
+    @await Html.PartialAsync("/Views/Alert/SuccessAlert.cshtml", (string)TempData["Success"])
+}
+
+<script src="~/js/manage.js"></script>
+
+@section ManageAjax
+{
+
+    @if (Context.Request.Cookies["Tab"] == "Personal" || Context.Request.Cookies["Tab"] == null)
+    {
+        <script>
+            function PersonalData() {
+                $.ajax({
+                    type: "GET",
+                    url: "/Account/PersonalData",
+                    success: function (data) {
+                        $('.content-container').html(data);
+                    }
+                });
+            }
+
+            $("#personalData-btn").click(PersonalData());
+            window.onload = PersonalData();
+        </script>
+    }
+    else if (Context.Request.Cookies["Tab"] == "Basket")
+    {
+        <script>
+            function Basket() {
+                $.ajax({
+                    type: "GET",
+                    url: "/Account/Basket",
+                    success: function (data) {
+                        $('.content-container').html(data);
+                    }
+                });
+            }
+
+            $("#personalData-btn").click(Basket());
+            window.onload = Basket();
+        </script>
+    }
+
+    <script>
+        $("#basket-btn").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/Account/Basket",
+                success: function (data) {
+                    $('.content-container').html(data);
+                }
+            });
+        });
+
+        $("#order-btn").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/Account/Order",
+                success: function (data) {
+                    $('.content-container').html(data);
+                }
+            });
+        });
+
+        $("#changePassword-btn").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/Account/ChangePassword",
+                success: function (data) {
+                    $('.content-container').html(data);
+                }
+            });
+        });
+
+        $("#personalData-btn").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/Account/PersonalData",
+                success: function (data) {
+                    $('.content-container').html(data);
+                }
+            });
+        });
+
+        $("#upBalance-btn").click(function () {
+            $.ajax({
+                type: "GET",
+                url: "/Account/UpBalance",
+                success: function (data) {
+                    $('.content-container').html(data);
+                }
+            });
+        });
+    </script>
+}

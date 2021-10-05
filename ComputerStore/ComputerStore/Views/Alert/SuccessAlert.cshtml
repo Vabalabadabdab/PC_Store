@@ -1,0 +1,16 @@
+﻿@model string
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="sweetalert2.all.min.js"></script>
+
+@if (Model != null)
+{
+    <script>
+        Swal.fire({
+            title: 'Success',
+            icon: 'success',
+            html:
+            '@Model.ToString()'
+        })
+    </script>
+}

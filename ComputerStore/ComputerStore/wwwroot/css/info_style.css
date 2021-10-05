@@ -1,0 +1,178 @@
+@charset "UTF-8";
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+.content-container h1 {
+  color: white;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 100;
+}
+.content-container h2 {
+  color: gray;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 100;
+}
+.content-container .bold {
+  font-weight: bold;
+}
+.content-container p {
+  color: gray;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 100;
+}
+.content-container img {
+  width: 100%;
+  height: auto;
+}
+.content-container ul {
+  list-style-type: square;
+  padding-left: 18px;
+}
+.content-container li {
+  content: "•";
+  margin-right: 10px;
+  font-weight: bold;
+  color: #00FF00;
+}
+.content-container span {
+  font-weight: bold;
+}
+.content-container a {
+  color: lightgreen;
+  background-color: transparent;
+}
+.content-container a:hover {
+  text-decoration: none;
+}
+.content-container hr {
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.content-container .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #4CAF50;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+.content-container .contacts .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+.content-container .contacts .info-container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: -20px;
+}
+.content-container .contacts .info-container .title p {
+  color: white;
+  margin-left: 10px;
+}
+.content-container .contacts .info-container .title img {
+  width: 25px;
+  height: 25px;
+}
+.content-container .contacts .info-container .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content-container .contacts .info-container .data p {
+  color: darkslategray;
+  padding: 0px;
+  margin: 5px;
+}
+.content-container .location {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.content-container .location img {
+  width: 30%;
+}
+.content-container .location .data {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.content-container .location .data .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.content-container .location .data .content img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+.content-container .location .data .content p {
+  margin: 0px;
+  margin-top: 2px;
+}

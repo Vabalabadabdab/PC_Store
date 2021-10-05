@@ -1,0 +1,55 @@
+﻿@model BLL_ComputerStore.Infrastucture.Models.GroupReviewDTO
+
+@if (Model != null)
+{
+    @foreach (var review in Model.Reviews)
+    {
+        <div class="review-container">
+            <div class="title-review">
+                <h2>@review.UserName</h2>
+                <h2><span>@review.WriteTime.ToShortDateString()</span></h2>
+            </div>
+            <div class="raiting-container">
+                <div class="points-container">
+                    <h1>@Math.Round(review.AvgRate, 1)</h1>
+                </div>
+                <div class="property-points-container">
+                    <h2>Cost</h2>
+                    <h2><span>@review.CostRate</span>/5</h2>
+                </div>
+                <div class="property-points-container">
+                    <h2>Quality</h2>
+                    <h2><span>@review.QualityRate</span>/5</h2>
+                </div>
+                <div class="property-points-container">
+                    <h2>Functionality</h2>
+                    <h2><span>@review.FuncRate</span>/5</h2>
+                </div>
+                <hr />
+                @if (review.IsRecommend)
+                {
+                    <img src="~/images/comment/like.png" />
+                }
+                else
+                {
+                    <img src="~/images/comment/dislike.png" />
+                }
+            </div>
+
+            <div class="pros-container">
+                <h1>Pros</h1>
+                <pre>@review.Pros</pre>
+            </div>
+            <div class="cons-container">
+                <h1>Cons</h1>
+                <pre>@review.Cons</pre>
+            </div>
+            <div class="text-container">
+                <h1>Review</h1>
+                <pre>@review.Comment</pre>
+
+            </div>
+            <hr class="footer-hr" />
+        </div>
+    }
+}

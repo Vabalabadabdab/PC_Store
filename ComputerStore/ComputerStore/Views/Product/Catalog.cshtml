@@ -1,0 +1,40 @@
+﻿@model IEnumerable<BLL_ComputerStore.Infrastucture.Models.ProductDTO>
+
+<link href="~/css/product-container.css" rel="stylesheet" />
+<link href="~/css/nouislider.min.css" rel="stylesheet" />
+
+<div id="filter-container">
+    @await Html.PartialAsync($"PartialCategories/{@ViewBag.Category}")
+</div>
+
+<div id="product-container">
+    @if (@ViewBag.Filter != null)
+    {
+        @await Html.PartialAsync("/Views/Product/ProductCards.cshtml", @Model);
+    }
+</div>
+
+<input type="text" hidden="hidden" name="category" value="@ViewBag.Category" />
+
+<script src="~/js/nouislider.min.js"></script>
+<script src="~/js/double-slider.js"></script>
+<script src="~/js/product-container.js"></script>
+
+@if (@ViewBag.Filter == null)
+{
+    @section ProductAjax
+        {
+        <script>
+            window.onload = $(function () {
+                $.ajax({
+                    type: "POST",
+                    url: "/Product/GetProducts",
+                    data: { category: "@ViewBag.Category" },
+                    success: function (data) {
+                        $('#product-container').html(data);
+                    }
+                });
+            });
+        </script>
+    }
+}

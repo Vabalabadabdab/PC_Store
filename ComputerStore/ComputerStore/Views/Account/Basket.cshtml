@@ -1,0 +1,35 @@
+﻿@model List<BLL_ComputerStore.Infrastucture.Models.ProductDTO>
+@if (Model.Count() != 0 && Model != null)
+{
+<div class="basket_container">
+    <form asp-action="Checkout" method="post">
+        @foreach (var product in Model)
+        {
+
+            <div class="basket_item">
+                <input type="hidden" name="productId" value="@product.Id" />
+                <h3><span>@product.Name</span></h3>
+                <h3>Price: @product.Cost</h3>
+                <h3>Count:</h3>
+                <input type="number" min="1" max="99" value="1" name="count" />
+                <button class="remove_btn" type="button" onclick="RemoveProduct(@product.Id)">x</button>
+            </div>
+
+        }
+        <input type="submit" value="Checkout" />
+    </form>
+</div>   
+}
+
+<script>
+    function RemoveProduct(id) {
+        $.ajax({
+            type: "POST",
+            url: "/Account/RemoveProductFromBasket",
+            data: { productId: id },
+            success: function (data) {
+                location.reload();
+            }
+        });
+        }
+</script>

@@ -1,0 +1,161 @@
+﻿<div class="filter-card">
+    <form asp-action="GetSelectProducts" method="post">
+        <input type="hidden" name="category" value="CPU" />
+
+        <div id="slider"></div>
+        <div id="slider_values_container">
+            <input id="min-bar-val" class="bar-val" type="number" name="minPrice" />
+            <p>-</p>
+            <input id="max-bar-val" class="bar-val" type="number" name="maxPrice" />
+        </div>
+
+        <button type="button" class="accordion">Manufacturer</button>
+        <div class="panel">
+            <label class="container-filter">
+                AMD
+                <input type="checkbox" name="values" value="Manufacturer AMD">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Intel
+                <input type="checkbox" name="values" value="Manufacturer Intel">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Number of cores</button>
+        <div class="panel">
+            <label class="container-filter">
+                64
+                <input type="checkbox" name="values" value="Core 64">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                32
+                <input type="checkbox" name="values" value="Core 32">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                24
+                <input type="checkbox" name="values" value="Core 24">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                16
+                <input type="checkbox" name="values" value="Core 16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                12
+                <input type="checkbox" name="values" value="Core 12">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                10
+                <input type="checkbox" name="values" value="Core 10">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                8
+                <input type="checkbox" name="values" value="Core 8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                6
+                <input type="checkbox" name="values" value="Core 6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                4
+                <input type="checkbox" name="values" value="Core 4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2
+                <input type="checkbox" name="values" value="Core 2">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Number of threads</button>
+        <div class="panel">
+            <label class="container-filter">
+                128
+                <input type="checkbox" name="values" value="Thread 128">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                64
+                <input type="checkbox" name="values" value="Thread 64">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                48
+                <input type="checkbox" name="values" value="Thread 48">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                32
+                <input type="checkbox" name="values" value="Thread 32">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                24
+                <input type="checkbox" name="values" value="Thread 24">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                20
+                <input type="checkbox" name="values" value="Thread 20">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                16
+                <input type="checkbox" name="values" value="Thread 16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                12
+                <input type="checkbox" name="values" value="Thread 12">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                8
+                <input type="checkbox" name="values" value="Thread 8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                6
+                <input type="checkbox" name="values" value="Thread 6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                4
+                <input type="checkbox" name="values" value="Thread 4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2
+                <input type="checkbox" name="values" value="Thread 2">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Integrated graphics</button>
+        <div class="panel">
+            <label class="container-filter">
+                Yes
+                <input type="checkbox" name="values" value="IntegratedGraphics Yes">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                No
+                <input type="checkbox" name="values" value="IntegratedGraphics No">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="submit" class="accordion-btn">Apply</button>
+    </form>
+
+</div>

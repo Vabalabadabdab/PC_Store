@@ -1,0 +1,259 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 50px;
+    margin-bottom: 60px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(166,166,166,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-width: 1000px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+#navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    background-color: none;
+    position: fixed;
+    top: 10px;
+    width: 100%;
+    transition: background-color 0.3s linear;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 3;
+}
+
+    #navbar .navbar_a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+.navbar_a a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+    .navbar_a a:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+#logIn_btn {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+    #logIn_btn:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+#navbar_logo img {
+    margin-top: 6px;
+    max-height: 60px;
+    width: auto;
+}
+
+    #navbar_logo img:hover {
+        transform: scale(1.1);
+    }
+
+#navbar #navbar_buttons {
+    display: flex;
+    align-items: center;
+}
+
+#navbar_buttons img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#navbar_buttons #basket-div {
+    display:flex;
+}
+
+#userMoney {
+    display: flex;
+    flex-direction: column;
+}
+
+    #userMoney a {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 200;
+        text-decoration: none;
+    }
+
+        #userMoney a:hover {
+            text-decoration: underline;
+            transform: scale(1.1);
+            cursor: help;
+        }
+
+#navbar_buttons input {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+    #navbar_buttons input:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        transform: scale(1.1);
+    }
+
+    #navbar_buttons input,
+    #navbar_buttons input:active,
+    #navbar_buttons input:focus {
+        outline: none;
+    }
+
+.main {
+    margin-top: 100px;
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.drop_btn_menu {
+}
+
+.dropdown_menu {
+    display: none;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+    .dropdown_menu a {
+        border-radius: 10px;
+        border: 1px solid #f0f2f2;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        color: #A2C617;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .dropdown_menu #logout-href {
+        color: #eb002f;
+    }
+
+        .dropdown_menu #logout-href:hover {
+            background-color: #fcc7d2;
+            text-decoration: underline;
+        }
+
+    .dropdown_menu a:hover {
+        background-color: #fdffe8;
+        text-decoration: underline;
+    }
+
+.dropdown:hover .dropdown_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+    justify-self: flex-end;
+}

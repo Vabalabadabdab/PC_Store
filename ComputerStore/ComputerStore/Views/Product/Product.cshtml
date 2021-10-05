@@ -1,0 +1,214 @@
+﻿@model BLL_ComputerStore.Infrastucture.Models.ProductDTO
+<link href="~/css/product-style.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="~/lib/"></script>
+
+<div class="main-container">
+    <!-- Title and navbar -->
+    <div class="product-name-container">
+        <h1>@Model.Name</h1>
+    </div>
+    <div class="link-container">
+        <a class="link" href="#" onclick="goBack()">⮨ To product list</a>
+        <a class="link" href="#about-product">All about the product</a>
+        <a class="link" href="#specifications">Specifications</a>
+        <a class="link" href="#reviews">Reviews</a>
+    </div>
+    <hr />
+    <!-- Main product info -->
+    <div class="product-container" id="about-product">
+        <div class="image-container">
+            <img src="@Model.ProductImage" />
+        </div>
+        <div class="action-container">
+            <!-- if discount != null show discount -->
+            @if (false)
+            {
+                <div id="discountContainer" class="discount-container">
+                    <hr />
+                    <div class="discount-data">
+                        <h2>Discount 10%</h2>
+                        <h2>Days left: <span>0</span><span>2</span></h2>
+                    </div>
+                </div>
+            }
+            <div class="price-container">
+                <div class="left-container">
+                    <p>Are available</p>
+                    @if (false) // if discount != null show old price
+                    {
+                        <h3>2222</h3>
+                    }
+                    <h1>@Model.Cost <span>UAH</span></h1>
+                </div>
+                <div class="right-container">
+                    @if (Model.Rate > 0)
+                    {
+                        <p>User raiting: @Math.Round(Model.Rate, 1)/5</p>
+                    }
+                    else
+                    {
+                        <p>User raiting: No rate</p>
+                    }
+                    <button>
+                        <!-- add to cart aciton -->
+                        <p>Add to cart</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product values -->
+    <div id="specifications" class="specifications-container">
+        <div class="title-container">
+            <h1><span>Specifications</span> @Model.Name</h1>
+        </div>
+        <div class="key-container">
+            @foreach (var property in Model.Properties)
+            {
+                <h2>@property.Key</h2>
+                <hr />
+            }
+        </div>
+        <div class="value-container">
+            @foreach (var property in Model.Properties)
+            {
+                <h2 class="value"><span>@property.Value</span></h2>
+                <hr />
+            }
+        </div>
+    </div>
+    <!-- Form review -->
+    @if (User.Identity.IsAuthenticated)
+    {
+        @*@ViewBag.CurrentPage = Context.Request.Path;*@
+        <form id="formReview" asp-action="AddComment" method="post">
+            <input type="hidden" name="productId" value="@Model.Id" />
+            <input type="hidden" name="userName" value="@User.Identity.Name" />
+            <div class="form-review-container">
+                <div class="title-form-review-container">
+                    <h1>Write comment</h1>
+                </div>
+                <div class="raiting-form-container">
+                    <div class="title-container">
+                        <h3>Cost</h3>
+                        <h3>Quality</h3>
+                        <h3>Functionality</h3>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-element-container">
+                            <input onchange="showSliderValue(this, 'costLabel')" value="3" type="range" id="costSlider" name="costRate"
+                                   min="1" max="5">
+                            <label id="costLabel">3/5</label>
+                        </div>
+
+                        <div class="slider-element-container">
+                            <input onchange="showSliderValue(this, 'qualityLabel')" value="3" type="range" id="qualitySlider" name="qualityRate"
+                                   min="1" max="5">
+                            <label id="qualityLabel">3/5</label>
+                        </div>
+
+                        <div class="slider-element-container">
+                            <input onchange="showSliderValue(this, 'funcLabel')" value="3" type="range" id="funcSlider" name="funcRate"
+                                   min="1" max="5">
+                            <label id="funcLabel">3/5</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-form-container">
+                    <div class="pros-cons-container">
+                        <div class="input-text-container">
+                            <label>Pros</label>
+                            <input type="text" maxlength="30" name="pros">
+                        </div>
+
+                        <div class="input-text-container cons">
+                            <label>Cons</label>
+                            <input type="text" maxlength="30" name="cons">
+                        </div>
+                    </div>
+                    <div class="review-input-container">
+                        <label>Rewiew</label>
+                        <input type="text" maxlength="100" name="comment">
+                    </div>
+                </div>
+                <div class="radio-buttons-container">
+                    <h4>Recommend</h4>
+                    <div class="radio-container">
+                        <div class="radio-element">
+                            <h4>Yes</h4>
+                            <input type="radio" name="isRecommend" value="1" />
+                        </div>
+
+                        <div class="radio-element">
+                            <h4>No</h4>
+                            <input type="radio" name="isRecommend" value="0" />
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" name="submit" value="Add review" onclick="" />
+            </div>
+        </form>
+    }
+    <!-- Comments div -->
+    <div class="title-reviews">
+        <h1>Reviews</h1>
+    </div>
+    <div id="reviews" class="reviews-container">
+        <!-- review content -->
+    </div>
+    <!-- end -->
+</div>
+
+@if ((string)TempData["Error"] != null)
+{
+    @await Html.PartialAsync("/Views/Alert/ErrorAlert.cshtml", (string)TempData["Error"])
+}
+@if ((string)TempData["Success"] != null)
+{
+    @await Html.PartialAsync("/Views/Alert/SuccessAlert.cshtml", (string)TempData["Success"])
+}
+
+<script src="~/js/product-script.js"></script>
+<script>
+    function GetReviews() {
+        $.ajax({
+            type: "POST",
+            url: "/Product/GetReviews",
+            data: { productId: @Model.Id },
+            success: function (data) {
+                $('#reviews').html(data);
+            }
+        });
+    }
+
+    window.onload = GetReviews();
+
+    $("#formReview").submit(function (e) {
+        e.preventDefault();
+
+        var form = $(this);
+        var url = form.attr('action');
+
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: form.serialize(),
+            success: function (data) {
+                location.reload();
+            }
+        });
+    });
+
+    function GetDisocunt() {
+        $.ajax({
+            type: "POST",
+            url: "/Product/GetDiscount",
+            data: { productId: @Model.Id },
+            success: function (data) {
+                $('#reviews').html(data);
+            }
+        });
+    }
+
+</script>

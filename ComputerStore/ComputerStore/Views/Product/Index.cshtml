@@ -1,0 +1,142 @@
+﻿<link href="~/css/catalog.css" rel="stylesheet" />
+
+<div class="main-container">
+    <div class="category-container">
+        <div class="accordion">
+            <img src="~/images/cpu.png" alt="Alternate Text" />
+            <p>Components</p>
+        </div>
+        <div class="panel">
+            <div class="accordion-item">
+                <img src="~/images/cpu.png" alt="Cpu" />
+                <form action="~/Product/Catalog" method="get">
+                    <input type="submit" value="CPU" name="category" />
+                </form>
+            </div>
+            <div class="accordion-item">
+                <img src="~/images/graphics-card.png" alt="Gpu" />
+                <form action="~/Product/Catalog" method="get">
+                    <input type="submit" value="GPU" name="category" />
+                </form>
+            </div>
+            <div class="accordion-item">
+                <img src="~/images/motherboard.png" alt="Motherboard" />
+                <form action="~/Product/Catalog" method="get">
+                    <input type="submit" value="Motherboards" name="category" />
+                </form>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <img src="~/images/mouse.png" alt="Mosue" />
+            <p>Periphery</p>
+        </div>
+        <div class="panel">
+            <div class="accordion-item">
+                <img src="~/images/mouse.png" alt="Mouse" />
+                <form action="~/Product/Catalog" method="get">
+                    <input type="submit" value="Mouse" name="category" />
+                </form>
+            </div>
+            <div class="accordion-item">
+                <img src="~/images/keyboard.png" alt="Keyboard" />
+                <form action="~/Product/Catalog" method="get">
+                    <input type="submit" value="Keyboard" name="category" />
+                </form>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <img src="~/images/laptop.png" alt="Laptop" />
+            <p>Laptops</p>
+        </div>
+        <div class="panel">
+            <div class="accordion-item">
+                <img src="~/images/laptop.png" alt="Laptop" />
+                <form action="~/Product/Catalog" method="get">
+                    <input type="submit" value="Laptops" name="category" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="slider">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <a href="~/Product/Catalog?category=GPU">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="~/images/gpus-cor.jpg" style="width:100%">
+                        <div class="text">Video cards</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="~/Product/Catalog?category=CPU">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="/images/cpus_cor.jpg" style="width:100%">
+                        <div class="text">Processors</div>
+                    </a>
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="~/Product/Catalog?category=Motherboard">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="~/images/motherboards-cor.jpg" style="width:100%">
+                        <div class="text">Motherboards</div>
+                    </a>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+        </div>
+
+        <div class="link-container">
+            <div class="link">
+                <a href="https://www.facebook.com/computerchannelpk/">
+                    <img src="~/images/facebook.jpg" />
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://telegram.me/joinchat/AAAAAECOIxmMN4JlxB3D2Q">
+                    <img src="~/images/telegram.jpg" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/js/catalog.js"></script>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>

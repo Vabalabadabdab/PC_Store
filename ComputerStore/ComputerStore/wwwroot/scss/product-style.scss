@@ -1,0 +1,555 @@
+﻿.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15% 0 15%;
+
+    hr {
+        width: 100%;
+    }
+
+    .link {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 5px 16px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 200;
+        text-decoration: underline;
+
+        &:hover {
+            color: #FE33BA;
+        }
+    }
+
+    .product-name-container {
+
+        h1 {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 200;
+            text-shadow: black 0px 0 10px;
+        }
+    }
+
+    .link-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .product-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .image-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0px 0px 10px black;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .action-container {
+            width: 45%;
+
+
+            .discount-container {
+                display: flex;
+                width: 100%;
+                padding: 5px;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: 0px 0px 10px black;
+                margin-bottom: 30px;
+
+                hr {
+                    border: none;
+                    border-left: 5px solid #FE33BA;
+                    height: 80px;
+                    width: 10px;
+                    margin: 0px;
+                }
+
+                .discount-data {
+                    display: flex;
+                    width: 95%;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h2 {
+                        margin: 6px;
+                        color: #FE33BA;
+                        font-size: 20px;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-weight: bold;
+                    }
+
+                    span {
+                        margin-left: 3px;
+                        border: 1px solid gray;
+                        font-size: 26px;
+                        color: #A69999;
+                    }
+                }
+            }
+
+            .price-container {
+                display: flex;
+                width: 100%;
+                padding: 5px;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: 0px 0px 10px black;
+
+                .left-container {
+                    width: 49%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    padding: 5px;
+
+                    p {
+                        margin: 0px;
+                        color: #304E92;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    }
+
+                    h1 {
+                        margin: 0px;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+
+                    h3 {
+                        text-decoration: line-through;
+                        margin: 0px;
+                        color: #A69999;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .right-container {
+                    width: 49%;
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        color: orange;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-size: 16px;
+                        margin: 0px;
+                        padding: 5px;
+                        font-weight: bold;
+                    }
+
+                    button {
+                        background-color: #A2C617;
+                        height: 60px;
+                        border: 0px;
+
+                        &:hover {
+                            opacity: 0.8;
+                            cursor: pointer;
+                        }
+
+                        p {
+                            color: white;
+                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                            font-size: 22px;
+                            margin: 0px;
+                            padding: 0px;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .specifications-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 60px;
+
+        .title-container {
+            width: 100%;
+        }
+
+        .key-container {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+        }
+
+        .value-container {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+
+        hr {
+            margin: 0px;
+            padding: 0px;
+            color: #A69999;
+        }
+
+        h1 {
+            color: #A69999;
+            text-align: center;
+            padding: 14px 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 200;
+        }
+
+        h2 {
+            margin: 6px;
+            color: #A69999;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 100;
+        }
+
+        span {
+            color: black;
+        }
+    }
+
+    .title-reviews {
+        margin-top: 60px;
+
+        h1 {
+            color: #A69999;
+            text-align: center;
+            padding: 14px 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 200;
+            color: black;
+        }
+    }
+
+    .reviews-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .title-review {
+            display: flex;
+            width: 25%;
+            justify-content: space-between;
+
+            h2 {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 200;
+                color: black;
+            }
+
+            span {
+                color: #A69999;
+                margin-left: 20%;
+            }
+        }
+
+        .raiting-container {
+            display: flex;
+            align-items: center;
+
+            .points-container {
+                border-radius: 50%;
+                border: 3px solid #A2C617;
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                h1 {
+                    color: #A69999;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0px;
+                    font-size: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+
+            .property-points-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 10px;
+                margin-left: 20px;
+
+
+                h2 {
+                    color: #A69999;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0px;
+                    font-size: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                    color: black;
+                }
+
+                span {
+                    color: #A69999;
+                }
+            }
+
+            hr {
+                border: none;
+                border-left: 1px solid #A69999;
+                height: 40px;
+                width: 2px;
+                margin: 0px;
+                margin-left: 20px;
+                padding: 0px;
+            }
+
+            img {
+                margin-left: 20px;
+                height: 24px;
+                width: 24px;
+            }
+        }
+
+        .review-container {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: start;
+            width: 50%;
+
+            pre {
+                color: #A69999;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                margin: 5px 0px 15px 0px;
+            }
+
+            .pros-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                h1 {
+                    color: #A2C617;
+                    padding: 0;
+                    margin: 0px;
+                    font-size: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                }
+            }
+
+            .cons-container {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    color: #BB6666;
+                    padding: 0;
+                    margin: 0px;
+                    font-size: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                }
+            }
+
+            .text-container {
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    color: black;
+                    padding: 0;
+                    margin: 0px;
+                    font-size: 20px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: bold;
+                }
+            }
+
+            .footer-hr {
+                width: 100%;
+            }
+        }
+    }
+
+    .form-review-container {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+
+        input[type=submit] {
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: #0075FF;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            width: 15%;
+            height: 40px;
+            border: none;
+            min-width: 100px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .title-form-review-container {
+            h1 {
+                color: #A69999;
+                text-align: center;
+                padding: 14px 16px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 200;
+                color: black;
+            }
+        }
+
+        .raiting-form-container {
+            display: flex;
+            flex-direction: row;
+
+            .title-container {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-around;
+                height: 100px;
+
+                h3 {
+                    color: #A69999;
+                    text-align: center;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                    color: black;
+                    margin: 0px;
+                    font-size: 16px;
+                }
+            }
+
+            .slider-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100px;
+                margin-left: 60px;
+
+                .slider-element-container {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+        }
+
+        .review-form-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+            input[type=text] {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            .pros-cons-container {
+                display: flex;
+                justify-content: space-between;
+                width: 35%;
+
+                .input-text-container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 45%;
+
+                    label {
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                        font-weight: 200;
+                    }
+
+                    .cons {
+                        margin-left: 40px;
+                    }
+                }
+            }
+
+            .review-input-container {
+                display: flex;
+                flex-direction: column;
+                width: 35%;
+
+                label {
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    font-weight: 200;
+                }
+
+                input[type=text] {
+                    height: 100px;
+                    padding-bottom: 70px;
+                }
+            }
+        }
+
+        .radio-buttons-container {
+            display: flex;
+            flex-direction: column;
+
+            h4 {
+                color: #A69999;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 200;
+                color: black;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .radio-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-top: 10px;
+                justify-content: space-between;
+                width: 8%;
+
+                .radio-element {
+                    display: flex;
+                }
+
+                input[type=radio] {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

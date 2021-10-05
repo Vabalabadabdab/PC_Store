@@ -1,0 +1,55 @@
+﻿@model List<BLL_ComputerStore.Infrastucture.Models.ProductDTO>
+
+@foreach (var product in @Model)
+{
+    <div class="product-card">
+        <form asp-action="Product">
+            <input type="hidden" name="id" value="@product.Id" />
+            <button>
+                @if (product.Rate != 0)
+                {
+                    <div class="product-card rate-container">
+                        <p>Rate: @Math.Round(product.Rate, 1)</p>
+                    </div>
+                }
+
+                <img src="@product.ProductImage">
+
+                <div class="product-card-content">
+                    <h2>@product.Name</h2>
+                    <p>@product.Description</p>
+                </div>
+            </button>
+        </form>
+        <div id="@product.Id-div" onclick="AddToBasket(@product.Id, '@User.Identity.Name')" class="product-card-footer">
+            <p>@product.Cost₴</p>
+            <a href="#">
+                <img id="@product.Id-img" src="~/images/shopping-basket.png">
+            </a>
+        </div>
+
+    </div>
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <script>
+        function AddToBasket(productId, userName) {
+            $.ajax({
+                type: "POST",
+                url: "/Account/AddToBasket",
+                data: { productId: productId, userName: userName },
+                success: function (data) {
+                    /*$('#reviews').html(data);*/
+                }
+            });
+
+            CheckProduct(productId);
+        }
+
+        function CheckProduct(id) {
+            $('#' + id + '-img').attr("src", "/images/check.png");
+            $('#' + id + '-div').css("background-color", "#F07427");
+        }
+    </script>
+}

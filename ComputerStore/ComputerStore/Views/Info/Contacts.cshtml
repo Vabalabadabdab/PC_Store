@@ -1,0 +1,168 @@
+﻿<link href="~/css/info_style.css" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?"></script>
+
+<div class="content-container">
+    <h1>Contacts</h1>
+
+    <div class="contacts">
+        <div class="info-container">
+            <div class="title">
+                <img src="~/images/info/phone-call.png" alt="Alternate Text" />
+                <p>Phones</p>
+            </div>
+            <div class="data">
+                <p><span>(067) 400-08-80</span></p>
+                <p><span>(044) 392-84-94</span></p>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="title">
+                <img src="~/images/info/headphone.png" alt="Alternate Text" />
+                <p>Call-center works:</p>
+            </div>
+            <div class="data">
+                <p><span>Mon-Fri: 09:00-21:00</span></p>
+                <p><span>Sat-Sun: 10: 00-18: 00</span></p>
+                <p><span>28.06: 10:00-18:00</span></p>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="title">
+                <img src="~/images/info/email.png" alt="Alternate Text" />
+                <p>E-mail:</p>
+            </div>
+            <div class="data">
+                <p><span>sales@compShop.ua</span></p>
+                <p><span>service@compShop.ua</span></p>
+                <p><span>corp@compShop.ua</span></p>
+            </div>
+        </div>
+
+        <div class="info-container">
+            <div class="title">
+                <img src="~/images/info/headphone.png" alt="Alternate Text" />
+                <p>Service consultant works:</p>
+            </div>
+            <div class="data">
+                <p><span>Mon-Fri: 09: 00-18: 00</span></p>
+                <p><span>Sat-Sun: Day off</span></p>
+                <p><span>06/28: Day off</span></p>
+            </div>
+        </div>
+    </div>
+
+    <hr />
+
+    <!-- LOCATION DATA -->
+    <!-- Kiev -->
+    <div class="location">
+        <img src="~/images/info/kiewStore.jpg" alt="Alternate Text" />
+        <div class="data">
+            <h2>Kiev City</h2>
+            <div class="content">
+                <img src="~/images/info/point.png" alt="Alternate Text" />
+                <p>
+                    st. Alexandra Mishugi, 10
+                    SEC Parallel (entrance from the side of Grigorenka Avenue)
+                    Showroom "ComputerShop"
+                </p>
+            </div>
+        </div>
+        <div class="data">
+            <div class="content">
+                <img src="~/images/info/clock.png" alt="Alternate Text" />
+                <p>
+                    Mon-Sun: 10: 00-20: 00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="kiewMap" style="width:100%;height:400px;"></div>
+
+    <hr />
+
+    <!-- Dnepr -->
+    <div class="location">
+        <img src="~/images/info/dneprStore.png" alt="Alternate Text" />
+        <div class="data">
+            <h2>Dnepr City</h2>
+            <div class="content">
+                <img src="~/images/info/point.png" alt="Alternate Text" />
+                <p>
+                    D. Yavornitskogo avenue, 100 (entrance from Knyagini Olga street, 1)
+                    Showroom "ComputerShop"
+                </p>
+            </div>
+        </div>
+        <div class="data">
+            <div class="content">
+                <img src="~/images/info/clock.png" alt="Alternate Text" />
+                <p>
+                    Mon-Fri: 10: 00-20: 00
+                    Sat-Sun: 10: 00-18: 00
+                    06/28: 10: 00-18: 00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="dneprMap" style="width:100%;height:400px;"></div>
+
+    <hr />
+
+    <!-- Kharkov -->
+    <div class="location">
+        <img src="~/images/info/kharkovStore.jpg" alt="Alternate Text" />
+        <div class="data">
+            <h2>Kharkov City</h2>
+            <div class="content">
+                <img src="~/images/info/point.png" alt="Alternate Text" />
+                <p>
+                    Independence Avenue, 17
+                    Showroom "ComputerStore"
+                </p>
+            </div>
+        </div>
+        <div class="data">
+            <div class="content">
+                <img src="~/images/info/clock.png" alt="Alternate Text" />
+                <p>
+                    Mon-Sun: 10: 00-20: 00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="kharkovMap" style="width:100%;height:400px;"></div>
+</div>
+
+<script type="text/javascript">
+    const dneprStoreCoords = [48.4745891, 35.0236648];
+    const kharkovStoreCoords = [50.0056579, 36.2352616];
+    const kievStoreCoords = [50.3946795, 30.6370595];
+
+    function DisplayGoogleMap(xCoord, yCoord, divName) {
+
+        var myAddress = new google.maps.LatLng(xCoord, yCoord);
+
+        var mapOptions = {
+            center: myAddress,
+            zoom: 15,
+            minZoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById(divName), mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myAddress,
+            animation: google.maps.Animation.BOUNCE,
+        });
+
+        marker.setMap(map);
+    }
+
+    DisplayGoogleMap(kievStoreCoords[0], kievStoreCoords[1], "kiewMap");
+    DisplayGoogleMap(dneprStoreCoords[0], dneprStoreCoords[1], "dneprMap");
+    DisplayGoogleMap(kharkovStoreCoords[0], kharkovStoreCoords[1], "kharkovMap");
+</script>
