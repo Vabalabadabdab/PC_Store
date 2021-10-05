@@ -1,0 +1,102 @@
+﻿<div class="filter-card">
+    <form asp-action="GetSelectProducts" method="post">
+        <input type="hidden" name="category" value="Mouse" />
+
+        <div id="slider"></div>
+        <div id="slider_values_container">
+            <input id="min-bar-val" class="bar-val" type="number" name="minPrice" />
+            <p>-</p>
+            <input id="max-bar-val" class="bar-val" type="number" name="maxPrice" />
+        </div>
+
+        <button type="button" class="accordion">Manufacturer</button>
+        <div class="panel">
+            <label class="container-filter">
+                Logitech
+                <input type="checkbox" name="values" value="Manufacturer Logitech">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Zowie
+                <input type="checkbox" name="values" value="Manufacturer Zowie">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Razer
+                <input type="checkbox" name="values" value="Manufacturer Razer">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                A4Tech
+                <input type="checkbox" name="values" value="Manufacturer A4Tech">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                SteelSeries
+                <input type="checkbox" name="values" value="Manufacturer SteelSeries">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Hator
+                <input type="checkbox" name="values" value="Manufacturer Hator">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                HyperX
+                <input type="checkbox" name="values" value="Manufacturer HyperX">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Cougar
+                <input type="checkbox" name="values" value="Manufacturer Cougar">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                ASUS
+                <input type="checkbox" name="values" value="Manufacturer ASUS">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Sensor type</button>
+        <div class="panel">
+            <label class="container-filter">
+                Laser
+                <input type="checkbox" name="values" value="Sensor Laser">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Optical
+                <input type="checkbox" name="values" value="Sensor Optical">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Laser + Optical
+                <input type="checkbox" name="values" value="Sensor LaserOptical">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Connect</button>
+        <div class="panel">
+            <label class="container-filter">
+                Wireless
+                <input type="checkbox" name="values" value="Connect Wireless">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Wired
+                <input type="checkbox" name="values" value="Connect Wired">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Combined
+                <input type="checkbox" name="values" value="Connect Combined">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="submit" class="accordion-btn">Apply</button>
+    </form>
+
+</div>

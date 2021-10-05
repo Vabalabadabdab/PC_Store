@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vDgqF0Lj36EEIjccls1TPMjm9Oh5Ugff0IoqFB+puu4NvT9SPTbm9F7HHiey0cdOpCcC51hT2Fi4VJu3r0KvgA==",
+  "dgSpecHash": "+kImr8J+KPr7hW7Z1J5s5nnUhehQrE9lke0aPVwvzEheOQYbplyrhLKteKoPXwpxi0Qc06r5gm6ri/9cZEF8IA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\ComputerStore\\UI_ComputerStore.csproj",
+  "projectFilePath": "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\ComputerStore\\UI_ComputerStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hallc\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\hallc\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",

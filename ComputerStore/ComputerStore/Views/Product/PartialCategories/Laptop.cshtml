@@ -1,0 +1,232 @@
+﻿<div class="filter-card">
+    <form asp-action="GetSelectProducts" method="post">
+        <input type="hidden" name="category" value="Laptop" />
+
+        <div id="slider"></div>
+        <div id="slider_values_container">
+            <input id="min-bar-val" class="bar-val" type="number" name="minPrice" />
+            <p>-</p>
+            <input id="max-bar-val" class="bar-val" type="number" name="maxPrice" />
+        </div>
+
+        <button type="button" class="accordion">Manufacturer</button>
+        <div class="panel">
+            <label class="container-filter">
+                Acer
+                <input type="checkbox" name="values" value="Manufacturer Acer">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Asus
+                <input type="checkbox" name="values" value="Manufacturer Asus">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Dell
+                <input type="checkbox" name="values" value="Manufacturer Dell">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Dream Machines
+                <input type="checkbox" name="values" value="Manufacturer DreamMachines">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Gigabyte
+                <input type="checkbox" name="values" value="Manufacturer Gigabyte">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                HP
+                <input type="checkbox" name="values" value="Manufacturer HP">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Lenovo
+                <input type="checkbox" name="values" value="Manufacturer Lenovo">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                MSI
+                <input type="checkbox" name="values" value="Manufacturer MSI">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Processor ruler</button>
+        <div class="panel">
+            <label class="container-filter">
+                Intel Core i9
+                <input type="checkbox" name="values" value="ProcessorRuler Corei9">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Intel Core i7
+                <input type="checkbox" name="values" value="ProcessorRuler Corei7">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Intel Core i5
+                <input type="checkbox" name="values" value="ProcessorRuler Corei5">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Intel Core i3
+                <input type="checkbox" name="values" value="ProcessorRuler Corei3">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                AMD Ryzen 9
+                <input type="checkbox" name="values" value="ProcessorRuler Ryzen9">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                AMD Ryzen 7
+                <input type="checkbox" name="values" value="ProcessorRuler Ryzen7">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                AMD Ryzen 5
+                <input type="checkbox" name="values" value="ProcessorRuler Ryzen5">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                AMD Ryzen 3
+                <input type="checkbox" name="values" value="ProcessorRuler Ryzen3">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Count core</button>
+        <div class="panel">
+            <label class="container-filter">
+                8 Core
+                <input type="checkbox" name="values" value="CountCore 8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                6 Core
+                <input type="checkbox" name="values" value="CountCore 6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                4 Core
+                <input type="checkbox" name="values" value="CountCore 4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2 Core
+                <input type="checkbox" name="values" value="CountCore 2">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Graphics card type</button>
+        <div class="panel">
+            <label class="container-filter">
+                Discrete
+                <input type="checkbox" name="values" value="GraphicsType Discrete">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Integrated
+                <input type="checkbox" name="values" value="GraphicsType Integrated">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Video memory size</button>
+        <div class="panel">
+            <label class="container-filter">
+                16 Gb
+                <input type="checkbox" name="values" value="VideoMemorySize 16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                8 Gb
+                <input type="checkbox" name="values" value="VideoMemorySize 8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                6 Gb
+                <input type="checkbox" name="values" value="VideoMemorySize 6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                4 Gb
+                <input type="checkbox" name="values" value="VideoMemorySize 4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2 Gb
+                <input type="checkbox" name="values" value="VideoMemorySize 2">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Display resolution</button>
+        <div class="panel">
+            <label class="container-filter">
+                Ultra HD 4K (3840x2160)
+                <input type="checkbox" name="values" value="Resolution UltraHD">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Quad HD 2K (2560x1440)
+                <input type="checkbox" name="values" value="Resolution QuadHD">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2560x1600
+                <input type="checkbox" name="values" value="Resolution 2560x1600">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Full HD (1920x1080)
+                <input type="checkbox" name="values" value="Resolution FullHD">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">RAM size</button>
+        <div class="panel">
+            <label class="container-filter">
+                64 Gb
+                <input type="checkbox" name="values" value="RAM 64">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                32 Gb
+                <input type="checkbox" name="values" value="RAM 32">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                16 Gb
+                <input type="checkbox" name="values" value="RAM 16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                8 Gb
+                <input type="checkbox" name="values" value="RAM 8">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Internal storage</button>
+        <div class="panel">
+            <label class="container-filter">
+                SSD
+                <input type="checkbox" name="values" value="InternalStorage SSD">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                HDD + SSD
+                <input type="checkbox" name="values" value="InternalStorage HDD+SDD">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="submit" class="accordion-btn">Apply</button>
+    </form>
+
+</div>

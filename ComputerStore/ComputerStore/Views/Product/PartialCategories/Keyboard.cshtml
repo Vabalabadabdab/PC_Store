@@ -1,0 +1,195 @@
+﻿<div class="filter-card">
+    <form asp-action="GetSelectProducts" method="post">
+        <input type="hidden" name="category" value="Keyboard" />
+
+        <div id="slider"></div>
+        <div id="slider_values_container">
+            <input id="min-bar-val" class="bar-val" type="number" name="minPrice" />
+            <p>-</p>
+            <input id="max-bar-val" class="bar-val" type="number" name="maxPrice" />
+        </div>
+
+        <button type="button" class="accordion">Manufacturer</button>
+        <div class="panel">
+            <label class="container-filter">
+                A4Tech
+                <input type="checkbox" name="values" value="Manufacturer A4Tech">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                ASUS
+                <input type="checkbox" name="values" value="Manufacturer ASUS">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Corsair
+                <input type="checkbox" name="values" value="Manufacturer Corsair">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Cougar
+                <input type="checkbox" name="values" value="Manufacturer Cougar">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Ducky
+                <input type="checkbox" name="values" value="Manufacturer Ducky">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Glorious
+                <input type="checkbox" name="values" value="Manufacturer Glorious">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Hator
+                <input type="checkbox" name="values" value="Manufacturer Hator">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Keychron
+                <input type="checkbox" name="values" value="Manufacturer Keychron">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                HyperX
+                <input type="checkbox" name="values" value="Manufacturer HyperX">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Logitech
+                <input type="checkbox" name="values" value="Manufacturer Logitech">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                MSI
+                <input type="checkbox" name="values" value="Manufacturer MSI">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Razer
+                <input type="checkbox" name="values" value="Manufacturer Razer">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                SteelSeries
+                <input type="checkbox" name="values" value="Manufacturer SteelSeries">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Varmilo
+                <input type="checkbox" name="values" value="Manufacturer Varmilo">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Type</button>
+        <div class="panel">
+            <label class="container-filter">
+                Membrane
+                <input type="checkbox" name="values" value="Type Membrane">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Mechanical
+                <input type="checkbox" name="values" value="Type Mechanical">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Scissor
+                <input type="checkbox" name="values" value="Type Scissor">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Optical
+                <input type="checkbox" name="values" value="Type Optical">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Optical-mechanical
+                <input type="checkbox" name="values" value="Type OpticalMechanical">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Membrane + mechanical keys
+                <input type="checkbox" name="values" value="MembraneMechanical">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Form factor</button>
+        <div class="panel">
+            <label class="container-filter">
+                Full size
+                <input type="checkbox" name="values" value="FormFactor Full">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                TKL (Compact)
+                <input type="checkbox" name="values" value="FormFactor TKL">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Size 60%
+                <input type="checkbox" name="values" value="FormFactor 60%">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Size 65%
+                <input type="checkbox" name="values" value="FormFactor 65%">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Numpad
+                <input type="checkbox" name="values" value="FormFactor Numpad">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Connect</button>
+        <div class="panel">
+            <label class="container-filter">
+                Wireless
+                <input type="checkbox" name="values" value="Connect Wireless">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Wired
+                <input type="checkbox" name="values" value="Connect Wired">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Combined
+                <input type="checkbox" name="values" value="Connect Combined">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Backlight</button>
+        <div class="panel">
+            <label class="container-filter">
+                One color
+                <input type="checkbox" name="values" value="Backlight One">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                RGB Backlight
+                <input type="checkbox" name="values" value="Backlight RGB">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Multiple colors
+                <input type="checkbox" name="values" value="Backlight Multiple">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                No backlight
+                <input type="checkbox" name="values" value="Backlight No">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="submit" class="accordion-btn">Apply</button>
+    </form>
+
+</div>

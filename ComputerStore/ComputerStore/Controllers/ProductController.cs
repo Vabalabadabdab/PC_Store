@@ -32,11 +32,11 @@ namespace ComputerStore.Controllers
 
         public async Task<IActionResult> GetProducts(string category)
         {
-            var product = await _storeService.GetProductFromCategoryAsync(category);
+            var products = await _storeService.GetProductFromCategoryAsync(category);
 
-            //_storeService.AddTestPorducts(); // test method
+            await AddTestProducts(); // test method
 
-            return PartialView("ProductCards", product);
+            return PartialView("ProductCards", products);
         }
 
         public async Task<IActionResult> GetReviews(int productId)
@@ -116,6 +116,13 @@ namespace ComputerStore.Controllers
                 TempData["Success"] = "Thanks for your riview";
             }
             TempData["Error"] = "Incorrect data in your review";
+        }
+
+        private async Task AddTestProducts() // test method
+        {
+            var products = await _storeService.GetProductsAsync();
+            if (products.Count() == 0)
+                _storeService.AddTestPorducts();
         }
     }
 }

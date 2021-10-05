@@ -152,13 +152,13 @@ input::-webkit-inner-spin-button {
 }
 
     .product-card-content h2 {
-        font-size: 28px;
+        font-size: 16px;
         margin: 2px;
     }
 
     .product-card-content p {
         color: grey;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 300;
     }
 

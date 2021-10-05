@@ -1,0 +1,189 @@
+﻿<div class="filter-card">
+    <form asp-action="GetSelectProducts" method="post">
+        <input type="hidden" name="category" value="Motherboard" />
+
+        <div id="slider"></div>
+        <div id="slider_values_container">
+            <input id="min-bar-val" class="bar-val" type="number" name="minPrice" />
+            <p>-</p>
+            <input id="max-bar-val" class="bar-val" type="number" name="maxPrice" />
+        </div>
+
+        <button type="button" class="accordion">Manufacturer</button>
+        <div class="panel">
+            <label class="container-filter">
+                AsRock
+                <input type="checkbox" name="values" value="Manufacturer AsRock">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Asus
+                <input type="checkbox" name="values" value="Manufacturer Asus">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Biostar
+                <input type="checkbox" name="values" value="Manufacturer Biostar">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Gigabyte
+                <input type="checkbox" name="values" value="Manufacturer Gigabyte">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                MSI
+                <input type="checkbox" name="values" value="Manufacturer MSI">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Socket</button>
+        <div class="panel">
+            <label class="container-filter">
+                Socket 1150
+                <input type="checkbox" name="values" value="Socket 1150">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket 1151-V2
+                <input type="checkbox" name="values" value="Socket 1151-V2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket 1155
+                <input type="checkbox" name="values" value="Socket 1155">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket 1200
+                <input type="checkbox" name="values" value="Socket 1200">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket 1700
+                <input type="checkbox" name="values" value="Socket 1700">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket 2066
+                <input type="checkbox" name="values" value="Socket 2066">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket 3647
+                <input type="checkbox" name="values" value="Socket 3647">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket AM3/AM3+
+                <input type="checkbox" name="values" value="Socket AM3/AM3+">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket AM4
+                <input type="checkbox" name="values" value="Socket AM4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket TR4
+                <input type="checkbox" name="values" value="Socket TR4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Socket TRX4
+                <input type="checkbox" name="values" value="Socket TRX4">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Form factor</button>
+        <div class="panel">
+            <label class="container-filter">
+                ATX
+                <input type="checkbox" name="values" value="FormFactor ATX">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                EATX
+                <input type="checkbox" name="values" value="FormFactor EATX">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                microATX
+                <input type="checkbox" name="values" value="FormFactor microATX">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                mini-ITX
+                <input type="checkbox" name="values" value="FormFactor mini-ITX">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Number of memory slots</button>
+        <div class="panel">
+            <label class="container-filter">
+                12x
+                <input type="checkbox" name="values" value="MemorySlots 12">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                8x
+                <input type="checkbox" name="values" value="MemoryType 8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                4x
+                <input type="checkbox" name="values" value="MemoryType 4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                2x
+                <input type="checkbox" name="values" value="MemoryType 2">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">Number of SATA</button>
+        <div class="panel">
+            <label class="container-filter">
+                8 slots
+                <input type="checkbox" name="values" value="SATA 8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                6 slots
+                <input type="checkbox" name="values" value="SATA 6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                5 slots
+                <input type="checkbox" name="values" value="SATA 5">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                4 slots
+                <input type="checkbox" name="values" value="SATA 4">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="button" class="accordion">RGB Backlight</button>
+        <div class="panel">
+            <label class="container-filter">
+                With RGB
+                <input type="checkbox" name="values" value="Backlight Yes">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container-filter">
+                Without RGB
+                <input type="checkbox" name="values" value="Backlight No">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <button type="submit" class="accordion-btn">Apply</button>
+    </form>
+
+</div>

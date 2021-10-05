@@ -766,11 +766,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\Core_ComputerStore\\Core_ComputerStore.csproj",
+      "projectUniqueName": "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\Core_ComputerStore\\Core_ComputerStore.csproj",
       "projectName": "Core_ComputerStore",
-      "projectPath": "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\Core_ComputerStore\\Core_ComputerStore.csproj",
+      "projectPath": "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\Core_ComputerStore\\Core_ComputerStore.csproj",
       "packagesPath": "C:\\Users\\hallc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\Core_ComputerStore\\obj\\",
+      "outputPath": "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\Core_ComputerStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -791,8 +791,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\Domain_ComputerStore\\Domain_ComputerStore.csproj": {
-              "projectPath": "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\Domain_ComputerStore\\Domain_ComputerStore.csproj"
+            "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\Domain_ComputerStore\\Domain_ComputerStore.csproj": {
+              "projectPath": "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\Domain_ComputerStore\\Domain_ComputerStore.csproj"
             }
           }
         }

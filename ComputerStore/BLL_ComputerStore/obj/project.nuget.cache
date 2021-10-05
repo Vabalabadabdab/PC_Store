@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PlWtDOwbJvEbA2hzRHUO1Xk5czMbwSqiNKpNpmzLJN46n5hXbWjwN2PVkCxEuBRVBAdm+RY3m3f4jz1Wk8lhtw==",
+  "dgSpecHash": "jsZS2ED21ppOROCjb9eIFBFbSSclh1cm2h0Oq1xdbWBBziSSlWYljEu6gn3avUBjknrBgns1aJ9cFmBd9hSPQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\BLL_ComputerStore\\BLL_ComputerStore.csproj",
+  "projectFilePath": "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\BLL_ComputerStore\\BLL_ComputerStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hallc\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\hallc\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

@@ -171,6 +171,10 @@ namespace BLL_ComputerStore.Services
         {
             AddCPUs();
             AddGPUs();
+            AddMotherboards();
+            AddMouses();
+            AddKeyboards();
+            AddLaptops();
             _context.SaveChanges();
         }
         private void AddCPUs()
@@ -222,6 +226,63 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "MemoryType", "GDDR5"); // MemoryType
             AddTestProp(productId, "Backlight", "No"); // Backlight
             AddTestProp(productId, "Fan", "2"); // Fan
+        }
+        private void AddMotherboards()
+        {
+            int productId = 0;
+
+            productId = AddTestProduct("MSI B450 GAMING PLUS MAX", "AM4 ATX", 2849,
+                "https://img.telemart.ua/170156-450049/msi-b450-gaming-plus-max-sam4-amd-b450.png", "Motherboard");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "MSI"); // Manufacturer
+            AddTestProp(productId, "Socket", "AM4"); // Socket
+            AddTestProp(productId, "FormFactor", "ATX"); // Bitness
+            AddTestProp(productId, "MemorySlots", "4"); // MemoryType
+            AddTestProp(productId, "SATA", "6"); // Backlight
+            AddTestProp(productId, "Backlight", "No"); // Fan
+        }
+        private void AddMouses()
+        {
+            int productId = 0;
+
+            productId = AddTestProduct("Logitech G Pro X SUPERLIGHT", "WHITE 100-25400 dpi", 4999,
+                "https://img.telemart.ua/343952-511357/logitech-g-pro-x-superlight-910-005942-white.png", "Mouse");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Logitech"); // Manufacturer
+            AddTestProp(productId, "Sensor", "Optical"); // Sensor
+            AddTestProp(productId, "Connect", "Wireless"); // Connect
+            AddTestProp(productId, "Color", "White"); // Color
+            AddTestProp(productId, "Dpi", "100–25400 dpi"); // DPI
+        }
+        private void AddKeyboards()
+        {
+            int productId = 0;
+
+            productId = AddTestProduct("HATOR Rockfall Outemu Mechanical Switches Red RU (HTK-606)", "Mechanical Wired RGB Backlight", 1799,
+                "https://img.telemart.ua/91294-475464/hator-rockfall-outemu-mechanical-switches-red-ru-htk-606-black.png", "Keyboard");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "-"); // Manufacturer
+            AddTestProp(productId, "Type", "Mechanical"); // Type
+            AddTestProp(productId, "FormFactor", "Full"); // Form factor
+            AddTestProp(productId, "Connect", "Wired"); // Connect
+            AddTestProp(productId, "Backlight", "RGB"); // Backlight
+        }
+        private void AddLaptops()
+        {
+            int productId = 0;
+
+            productId = AddTestProduct("Asus ZenBook S UX393EA-HK022R (90NB0S71-M01230) Jade Black", "Core i7 4 Core RAM 16Gb 1024 SSD", 53999,
+                "https://img.telemart.ua/355859-499836/asus-zenbook-s-ux393ea-hk022r-90nb0s71-m01230-jade-black.png", "Laptop");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Asus"); // Manufacturer
+            AddTestProp(productId, "ProcessorRuler", "Corei7"); // ProcessorRuler
+            AddTestProp(productId, "CountCore", "4"); // CountCore
+            AddTestProp(productId, "GraphicsType", "Integrated"); // GraphicsType
+            AddTestProp(productId, "VideoMemorySize", "-"); // VideoMemorySize
+            AddTestProp(productId, "Resolution", "3300x2200"); // Resolution
+            AddTestProp(productId, "RAM", "16"); // RAM
+            AddTestProp(productId, "InternalStorage", "SSD"); // VideoMemorySize
+            AddTestProp(productId, "Storage", "1024 SSD"); // opt
         }
         private int AddTestProduct(string name, string description, int cost, string productImage, string category)
         {

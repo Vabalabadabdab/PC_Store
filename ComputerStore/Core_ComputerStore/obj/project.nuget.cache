@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Shjg0S0bCUPasf0811Yu077rgj+4LlfnAFbWoUkTDCV8mNZgQFxGhIQ2rVrkkAdRklFj+uw3X1KvTvsHMpuHKA==",
+  "dgSpecHash": "NbkqIpzjRsO9Td2RScyWC1s9nZoikrhv96faZP/JEHXiREA2L0mrXt1+6aKI3/7IWjZT4GSa6Rh2yf17ZR55Fg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hallc\\Desktop\\ComputerStore\\ComputerStore\\Core_ComputerStore\\Core_ComputerStore.csproj",
+  "projectFilePath": "C:\\Users\\hallc\\Documents\\GitHub\\PC_Store\\ComputerStore\\Core_ComputerStore\\Core_ComputerStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hallc\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",
     "C:\\Users\\hallc\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.4\\microsoft.aspnetcore.cryptography.keyderivation.5.0.4.nupkg.sha512",
