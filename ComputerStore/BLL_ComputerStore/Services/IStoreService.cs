@@ -188,6 +188,7 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "Core", "4"); // Core
             AddTestProp(productId, "Thread", "8"); // Thread
             AddTestProp(productId, "IntegratedGraphics", "No"); // Integrated Graphics
+            AddTestProp(productId, "Frequency", "3.60GHz"); // Frequency
 
             productId = AddTestProduct("Ryzen 5 3600", "3.60hz; 6 core; 12 threads; cash 32 MB", 5619,
                 "https://img.telemart.ua/264933-528644/amd-ryzen-5-3600-3642ghz-32mb-sam4-tray-100-000000031.png", "CPU");
@@ -196,6 +197,7 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "Core", "6"); // Core
             AddTestProp(productId, "Thread", "12"); // Thread
             AddTestProp(productId, "IntegratedGraphics", "No"); // Integrated Graphics
+            AddTestProp(productId, "Frequency", "3.60GHz"); // Frequency
 
             productId = AddTestProduct("Ryzen 5 1600", "3.20hz; 6 core; 12 threads; cash 16 MB", 3350,
                 "https://img.telemart.ua/181596-441299/amd-ryzen-5-1600-3236ghz-sam4-box-yd1600bbafbox.png", "CPU");
@@ -204,6 +206,7 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "Core", "6"); // Core
             AddTestProp(productId, "Thread", "12"); // Thread
             AddTestProp(productId, "IntegratedGraphics", "No"); // Integrated Graphics
+            AddTestProp(productId, "Frequency", "3.20GHz"); // Frequency
 
             productId = AddTestProduct("Intel Core i5 9400F", "2.90hz; 6 core; 6 threads; cash 9 MB", 5445,
                 "https://content.rozetka.com.ua/goods/images/big/13585196.jpg", "CPU");
@@ -212,6 +215,7 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "Core", "6"); // Core
             AddTestProp(productId, "Thread", "6"); // Thread
             AddTestProp(productId, "IntegratedGraphics", "No"); // Integrated Graphics
+            AddTestProp(productId, "Frequency", "2,90GHz"); // Frequency
         }
         private void AddGPUs()
         {
@@ -226,6 +230,76 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "MemoryType", "GDDR5"); // MemoryType
             AddTestProp(productId, "Backlight", "No"); // Backlight
             AddTestProp(productId, "Fan", "2"); // Fan
+
+            productId = AddTestProduct("MSI GeForce RTX 3060 Ti GAMING Z TRIO", "8GB 256BIT", 32499,
+                "https://img.telemart.ua/369448-514664/msi-geforce-rtx-3060-ti-gaming-z-trio-8192mb-rtx-3060-ti-gaming-z-trio-lhr.png", "GPU");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Nvidia"); // Manufacturer
+            AddTestProp(productId, "Memory", "8"); // Memory
+            AddTestProp(productId, "Bitness", "256"); // Bitness
+            AddTestProp(productId, "MemoryType", "GDDR6"); // MemoryType
+            AddTestProp(productId, "Backlight", "RGB"); // Backlight
+            AddTestProp(productId, "Fan", "3"); // Fan
+
+            productId = AddTestProduct("Sapphire Radeon RX 6600 XT PULSE", "8GB 128BIT Core frequency 2589", 25499,
+                "https://img.telemart.ua/377535-526446/sapphire-radeon-rx-6600-xt-pulse-8192mb-11309-03-20g.jpg", "GPU");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Amd"); // Manufacturer
+            AddTestProp(productId, "Memory", "8"); // Memory
+            AddTestProp(productId, "Bitness", "256"); // Bitness
+            AddTestProp(productId, "MemoryType", "GDDR6"); // MemoryType
+            AddTestProp(productId, "Backlight", "No"); // Backlight
+            AddTestProp(productId, "Fan", "2"); // Fan
+
+            productId = AddTestProduct("Palit GeForce GT 1030", "2GB 64BIT Core frequency 1151", 2976,
+                "https://img.telemart.ua/86463-367353/palit-geforce-gt-1030-2048mb-nec103000646-1082f.jpg", "GPU");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Amd"); // Manufacturer
+            AddTestProp(productId, "Memory", "8"); // Memory
+            AddTestProp(productId, "Bitness", "256"); // Bitness
+            AddTestProp(productId, "MemoryType", "GDDR4"); // MemoryType
+            AddTestProp(productId, "Backlight", "No"); // Backlight
+            AddTestProp(productId, "Fan", "No"); // Fan
+
+            productId = AddTestProduct("MSI GeForce GTX 1650 VENTUS XS OC 4096MB", "4GB 128BIT Core frequency 1740", 2976,
+                "https://img.telemart.ua/123791-446790/msi-geforce-gtx-1650-ventus-xs-oc-4096mb-gtx-1650-ventus-xs-4g-oc.png", "GPU");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Nvidia"); // Manufacturer
+            AddTestProp(productId, "Memory", "4"); // Memory
+            AddTestProp(productId, "Bitness", "128"); // Bitness
+            AddTestProp(productId, "MemoryType", "GDDR5"); // MemoryType
+            AddTestProp(productId, "Backlight", "No"); // Backlight
+            AddTestProp(productId, "Fan", "2"); // Fan
+
+            productId = AddTestProduct("MSI GeForce GT 730", "2GB 64BIT Core frequency 902", 2099,
+                "https://img.telemart.ua/46573-484606/msi-geforce-gt-730-2048mb-n730k-2gd3hlp.png", "GPU");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Amd"); // Manufacturer
+            AddTestProp(productId, "Memory", "4"); // Memory
+            AddTestProp(productId, "Bitness", "64"); // Bitness
+            AddTestProp(productId, "MemoryType", "GDDR3"); // MemoryType
+            AddTestProp(productId, "Backlight", "No"); // Backlight
+            AddTestProp(productId, "Fan", "No"); // Fan
+
+            productId = AddTestProduct("Sapphire Radeon E9260 Pro", "4GB 128BIT Core frequency 2150", 2099,
+                "https://img.telemart.ua/355838-500354/sapphire-radeon-e9260-pro-4096mb-11269-99-90g-fr-factory-recertified.png", "GPU");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Amd"); // Manufacturer
+            AddTestProp(productId, "Memory", "4"); // Memory
+            AddTestProp(productId, "Bitness", "128"); // Bitness
+            AddTestProp(productId, "MemoryType", "GDDR5"); // MemoryType
+            AddTestProp(productId, "Backlight", "No"); // Backlight
+            AddTestProp(productId, "Fan", "1"); // Fan
+
+            productId = AddTestProduct("Gigabyte GeForce RTX 2070 SUPER WindForce", "8GB 256BIT Core frequency 1785", 26554,
+                "https://img.telemart.ua/186245-382335/gigabyte-geforce-rtx-2070-super-windforce-oc-3x-8192mb-gv-n207swf3oc-8gd.png", "GPU");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Amd"); // Manufacturer
+            AddTestProp(productId, "Memory", "8"); // Memory
+            AddTestProp(productId, "Bitness", "256"); // Bitness
+            AddTestProp(productId, "MemoryType", "GDDR6"); // MemoryType
+            AddTestProp(productId, "Backlight", "No"); // Backlight
+            AddTestProp(productId, "Fan", "3"); // Fan
         }
         private void AddMotherboards()
         {
@@ -240,6 +314,36 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "MemorySlots", "4"); // MemoryType
             AddTestProp(productId, "SATA", "6"); // Backlight
             AddTestProp(productId, "Backlight", "No"); // Fan
+
+            productId = AddTestProduct("MSI B550M PRO-VDH WIFI", "AM4 microATX", 2849,
+                "https://img.telemart.ua/286212-517978/msi-b550m-pro-vdh-wifi-sam4-amd-b550.png", "Motherboard");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "MSI"); // Manufacturer
+            AddTestProp(productId, "Socket", "AM4"); // Socket
+            AddTestProp(productId, "FormFactor", "microATX"); // Bitness
+            AddTestProp(productId, "MemorySlots", "4"); // MemoryType
+            AddTestProp(productId, "SATA", "4"); // Backlight
+            AddTestProp(productId, "Backlight", "No"); // Fan
+
+            productId = AddTestProduct("Gigabyte H310M S2", "LGA1151-V2 microATX", 1149,
+                "https://img.telemart.ua/83296-276046/gigabyte-h310m-s2-s1151-v2-intel-h310.png", "Motherboard");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Gigabyte"); // Manufacturer
+            AddTestProp(productId, "Socket", "1151-V2"); // Socket
+            AddTestProp(productId, "FormFactor", "microATX"); // Bitness
+            AddTestProp(productId, "MemorySlots", "2"); // MemoryType
+            AddTestProp(productId, "SATA", "4"); // Backlight
+            AddTestProp(productId, "Backlight", "No"); // Fan
+
+            productId = AddTestProduct("Asus TUF B450M-PRO GAMING", "AM4 DDR4 microATX", 2399,
+                "https://img.telemart.ua/270184-486939/asus-tuf-gaming-b550m-plus-sam4-amd-b550.png", "Motherboard");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Asus"); // Manufacturer
+            AddTestProp(productId, "Socket", "AM4"); // Socket
+            AddTestProp(productId, "FormFactor", "microATX"); // Bitness
+            AddTestProp(productId, "MemorySlots", "4"); // MemoryType
+            AddTestProp(productId, "SATA", "6"); // Backlight
+            AddTestProp(productId, "Backlight", "Yes"); // Fan
         }
         private void AddMouses()
         {
@@ -266,6 +370,15 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "FormFactor", "Full"); // Form factor
             AddTestProp(productId, "Connect", "Wired"); // Connect
             AddTestProp(productId, "Backlight", "RGB"); // Backlight
+
+            productId = AddTestProduct("Logitech G213 Prodigy", "Membrane Wired RGB Backlight", 1899,
+                "https://img.telemart.ua/60840-528830/logitech-g213-prodigy-920-008092-black.png", "Keyboard");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Logitech"); // Manufacturer
+            AddTestProp(productId, "Type", "Membrane"); // Type
+            AddTestProp(productId, "FormFactor", "Full"); // Form factor
+            AddTestProp(productId, "Connect", "Wired"); // Connect
+            AddTestProp(productId, "Backlight", "RGB"); // Backlight
         }
         private void AddLaptops()
         {
@@ -280,6 +393,19 @@ namespace BLL_ComputerStore.Services
             AddTestProp(productId, "GraphicsType", "Integrated"); // GraphicsType
             AddTestProp(productId, "VideoMemorySize", "-"); // VideoMemorySize
             AddTestProp(productId, "Resolution", "3300x2200"); // Resolution
+            AddTestProp(productId, "RAM", "16"); // RAM
+            AddTestProp(productId, "InternalStorage", "SSD"); // VideoMemorySize
+            AddTestProp(productId, "Storage", "1024 SSD"); // opt
+
+            productId = AddTestProduct("Gigabyte AERO 15 OLED KD (KD-72RU624SD) Black", "Core i7 8 Core RAM 16Gb 1024 SSD", 61199,
+                "https://img.telemart.ua/368465-512896/gigabyte-aero-15-oled-kd-kd-72ru624sd-black.png", "Laptop");
+            AddTestGropReview(productId); // Review group
+            AddTestProp(productId, "Manufacturer", "Gigabyte"); // Manufacturer
+            AddTestProp(productId, "ProcessorRuler", "Corei7"); // ProcessorRuler
+            AddTestProp(productId, "CountCore", "8"); // CountCore
+            AddTestProp(productId, "GraphicsType", "Discrete"); // GraphicsType
+            AddTestProp(productId, "VideoMemorySize", "6 ГБ"); // VideoMemorySize
+            AddTestProp(productId, "Resolution", "UltraHD"); // Resolution
             AddTestProp(productId, "RAM", "16"); // RAM
             AddTestProp(productId, "InternalStorage", "SSD"); // VideoMemorySize
             AddTestProp(productId, "Storage", "1024 SSD"); // opt
