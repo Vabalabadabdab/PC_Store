@@ -3,17 +3,18 @@
 
 @if (Model.Count != 0 && Model != null)
 {
-    <div class="order_container">
-        @foreach (var order in Model)
-        {
-            <div class="order_item" onclick="GetProducts(@order.Id)">
-                <h3>Order id: <span>@order.Id</span></h3>
-                <h3>Status:<span> @order.Status</span></h3>
-                <h3>Total sum: <span>@order.TotalSum</span></h3>
-            </div>
+<div class="order_container">
+    <h2 style="color:white">Orders</h2>
+    @foreach (var order in Model)
+    {
+        <div class="order_item" onclick="GetProducts(@order.Id)">
+            <h3>Order id: <span>@order.Id</span></h3>
+            <h3>Status:<span> @order.Status</span></h3>
+            <h3>Total sum: <span>@order.TotalSum</span></h3>
+        </div>
 
-        }
-    </div>
+    }
+</div>
     <div class="orderProduct_container">
 
     </div>

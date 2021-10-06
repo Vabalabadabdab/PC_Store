@@ -57,6 +57,7 @@
 @if ((string)TempData["Error"] != null)
 {
     @await Html.PartialAsync("/Views/Alert/ErrorAlert.cshtml", (string)TempData["Error"])
+    @TempData.Remove("Error")
 }
 
 @section Scripts {

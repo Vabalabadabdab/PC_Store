@@ -28,10 +28,12 @@
 @if ((string)TempData["Error"] != null)
 {
     @await Html.PartialAsync("/Views/Alert/ErrorAlert.cshtml", (string)TempData["Error"])
+    @TempData.Remove("Error")
 }
 @if ((string)TempData["Success"] != null)
-{    
+{
     @await Html.PartialAsync("/Views/Alert/SuccessAlert.cshtml", (string)TempData["Success"])
+    @TempData.Remove("Success")
 }
 
 @section Scripts {

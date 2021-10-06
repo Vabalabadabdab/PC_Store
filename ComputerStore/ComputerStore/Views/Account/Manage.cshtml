@@ -1,4 +1,6 @@
-﻿<link href="~/css/manage-page.css" rel="stylesheet" />
+﻿@model string
+
+<link href="~/css/manage-page.css" rel="stylesheet" />
 
 <div class="main-container">
     <div class="menu">
@@ -17,10 +19,12 @@
 @if (TempData["Error"] != null)
 {
     @await Html.PartialAsync("/Views/Alert/ErrorAlert.cshtml", (string)TempData["Error"])
+    @TempData.Remove("Error")
 }
 @if (TempData["Success"] != null)
 {
     @await Html.PartialAsync("/Views/Alert/SuccessAlert.cshtml", (string)TempData["Success"])
+    @TempData.Remove("Success")
 }
 
 <script src="~/js/manage.js"></script>
@@ -28,7 +32,7 @@
 @section ManageAjax
 {
 
-    @if (Context.Request.Cookies["Tab"] == "Personal" || Context.Request.Cookies["Tab"] == null)
+    @if (Model == "Personal")
     {
         <script>
             function PersonalData() {
@@ -40,12 +44,10 @@
                     }
                 });
             }
-
-            $("#personalData-btn").click(PersonalData());
             window.onload = PersonalData();
         </script>
     }
-    else if (Context.Request.Cookies["Tab"] == "Basket")
+    else if (Model == "Basket")
     {
         <script>
             function Basket() {
@@ -57,9 +59,22 @@
                     }
                 });
             }
-
-            $("#personalData-btn").click(Basket());
             window.onload = Basket();
+        </script>
+    }
+    else if (Model == "Orders")
+    {
+        <script>
+            function Order() {
+                $.ajax({
+                    type: "GET",
+                    url: "/Account/Order",
+                    success: function (data) {
+                        $('.content-container').html(data);
+                    }
+                });
+            }
+            window.onload = Order();
         </script>
     }
 

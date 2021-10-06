@@ -50,9 +50,9 @@
                     {
                         <p>User raiting: No rate</p>
                     }
-                    <button>
+                    <button id="@Model.Id-btn" onclick="AddToBasket(@Model.Id, '@User.Identity.Name')">
                         <!-- add to cart aciton -->
-                        <p>Add to cart</p>
+                        <p id="@Model.Id-p">Add to cart</p>
                     </button>
                 </div>
             </div>
@@ -163,13 +163,36 @@
 @if ((string)TempData["Error"] != null)
 {
     @await Html.PartialAsync("/Views/Alert/ErrorAlert.cshtml", (string)TempData["Error"])
+    @TempData.Remove("Error")
 }
 @if ((string)TempData["Success"] != null)
 {
     @await Html.PartialAsync("/Views/Alert/SuccessAlert.cshtml", (string)TempData["Success"])
+    @TempData.Remove("Success")
 }
 
 <script src="~/js/product-script.js"></script>
+@if (User.Identity.IsAuthenticated)
+{
+    <script>
+        function AddToBasket(productId, userName) {
+            $.ajax({
+                type: "POST",
+                url: "/Account/AddToBasket",
+                data: { productId: productId, userName: userName },
+                success: function (data) {
+                }
+            });
+
+            CheckProduct(productId);
+        }
+
+        function CheckProduct(id) {
+            $('#' + id + '-p').text("Added");
+            $('#' + id + '-btn').css("background-color", "#F07427");
+        }
+    </script>
+}
 <script>
     function GetReviews() {
         $.ajax({

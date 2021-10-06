@@ -160,10 +160,9 @@ namespace UI_ComputerStore.Controllers
             return RedirectToAction("Index", "Product");
         }
 
-        public async Task<IActionResult> Manage()
+        public async Task<IActionResult> Manage(string tab)
         {
-            Response.Cookies.Append("Tab", "Personal");
-            return await Task.Run(() => View());
+            return await Task.Run(() => View("Manage", tab));
         }
 
         [HttpGet]
@@ -315,17 +314,16 @@ namespace UI_ComputerStore.Controllers
                 else
                     TempData["Error"] = "Not enough money in the account";
             }
-            Response.Cookies.Append("Tab", "Basket");
-            return View("Manage");
+            return View("Manage", "Basket");
         }
 
         [Authorize]
         [HttpPost]
-        public async Task RemoveProductFromBasket(int productId)
+        public async Task<IActionResult> RemoveProductFromBasket(int productId)
         {
-            Response.Cookies.Append("Tab", "Basket");
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
             await _userService.RemoveProductFromBasketAsync(productId, user.BasketId);
+            return View("Manage", "Basket");
         }
 
         [HttpGet]
